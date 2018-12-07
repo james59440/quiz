@@ -72,6 +72,14 @@ var tablquest = [
     },
 ];
 
+function restart() {
+    location.reload();
+    document.getElementById("global1").style.display = "none";
+    document.getElementById("global2").style.display = "block";
+
+}
+
+
 //board empty
 var tblcorrect = [];
 
@@ -206,6 +214,7 @@ correction()
 
 
     }
+
 
 
 
