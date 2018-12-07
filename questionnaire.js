@@ -1,3 +1,4 @@
+//board object
 var tablquest = [
        {question : "D'où vient 'Nintendo' ?",
         reponse1 : "1.Amerique",
@@ -71,11 +72,13 @@ var tablquest = [
     },
 ];
 
-
+//board empty
 var tblcorrect = [];
 
+//Variable to define the score in end of the quizz
 var result = 0;
 
+//function to define if question true score up else a message come with the correction of the question
 function correction() {
 
     if (tblcorrect[0]==1){
@@ -155,6 +158,8 @@ function correction() {
 
 
 var i = 0;
+
+//function for display the question and they answer in the page
 function Affichage(){
     i = 0;
     
@@ -174,6 +179,7 @@ Affichage();
 
 var tbl=0;
 
+//function to define the click in the answer for change the question and they answer and once time all question answer the page display an another page
 $(".repall").click(function () {
 
     var truc = $("li").index(this);
